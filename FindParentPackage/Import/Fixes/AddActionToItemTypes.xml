@@ -1,0 +1,98 @@
+<AML>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Action'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='CommandBarSection'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Form'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Grid'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Identity'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='ItemType'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Life Cycle Map'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='List'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Method'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Permission'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='PresentationConfiguration'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='RelationshipType'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Report'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Sequence'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='SQL'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+	<Item type="Item Action" action="add">
+		<source_id>
+			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Workflow Map'"/>
+		</source_id>
+		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	</Item>
+</AML>

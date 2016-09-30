@@ -1,0 +1,43 @@
+﻿<AML>
+ <Item type="Method" id="B719705C3F674B0EB8FCCEC273941D76" action="add">
+  <comments>Client-side method that checks whether current item belongs to a package</comments>
+  <execution_allowed_to keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</execution_allowed_to>
+  <method_code><![CDATA[// Aras Labs Project
+// Eli Donahue - 9/30/16
+//
+// Check whether the current context item belongs to a package. 
+// If package is found, return name.
+
+var inn = this.getInnovator();
+var item = this;
+var itemID = this.getID();
+var itemType = this.getType();
+
+if (!itemID)
+    return alert("Invalid item ID");
+    
+if (!itemType)
+    return alert("Invalid item type");
+    
+var pkgEl = inn.newItem("PackageElement","get");
+pkgEl.setProperty("element_id",itemID);
+pkgEl.setProperty("element_type",itemType);
+pkgEl = pkgEl.apply();
+
+if (pkgEl.isError())
+    return alert("No package found for "+itemType+" with id='"+itemID+"'.");
+    
+var pkgGrp = inn.newItem("PackageGroup","get");
+pkgGrp.setProperty("id",pkgEl.getProperty("source_id",""));
+pkgGrp = pkgGrp.apply();
+
+var pkg = inn.newItem("PackageDefinition","get");
+pkg.setProperty("id",pkgGrp.getProperty("source_id",""));
+pkg = pkg.apply();
+
+return alert(pkg.getProperty("name","Package name not found"));
+]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_FindParentPackage</name>
+ </Item>
+</AML>
