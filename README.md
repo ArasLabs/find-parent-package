@@ -19,6 +19,11 @@ The Find Parent Package project provides an Item Action that determines the name
 * SQL
 * Workflow Map
 
+## Project Details
+
+**Built Using:** Aras 11.0 SP7
+**Browsers Tested:** Internet Explorer 11
+
 ## Installation
 
 #### Important!
