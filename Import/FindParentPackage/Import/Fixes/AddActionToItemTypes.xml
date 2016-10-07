@@ -1,98 +1,66 @@
 <AML>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Action'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="3945A97C356848D9B81E0994FBA1D3CE">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Sequence" type="ItemType" name="Sequence">2B46201802CE46708C269667DB4798AC</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='CommandBarSection'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="D4C401695EE7429A845D7284AF21D96C">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="ItemType" type="ItemType" name="ItemType">450906E86E304F55A34B3C0D65C097EA</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Form'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="88C421C32FA144D4A69E40EA64C1B46C">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="RelationshipType" type="ItemType" name="RelationshipType">471932C33B604C3099070F4106EE5024</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Grid'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="34FFDB0D63FF4399BC83E1CD8643F840">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Form" type="ItemType" name="Form">47573682FB7549F59ADECD4BFE04F1DE</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Identity'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="8B2264C6885B40D6A1DFEB5A660FF41B">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Action" type="ItemType" name="Action">483228BE6B9A4C0E99ACD55FDF328DEC</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='ItemType'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="ECF5A03255354DDE91956ECE1CE9D5D1">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="List" type="ItemType" name="List">5736C479A8CB49BCA20138514C637266</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Life Cycle Map'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="0794B7A22B5B4BC1A398A2818038223E">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="CommandBarSection" type="ItemType" name="CommandBarSection">6DF95CF17D824F5DAC6A996FFC34D5F8</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='List'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="E73F5F3597534A829752428550F8B204">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="PresentationConfiguration" type="ItemType" name="PresentationConfiguration">80881F5852BC439E9F3CF0AEC03ABE2A</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Method'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="A0D2674F0B154C71B268BC51007BA2C0">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Method" type="ItemType" name="Method">87879A09B8044DE380D59DF22DE1867F</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Permission'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="5F3E77988CB54E33B7DB3831982BC47E">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Grid" type="ItemType" name="Grid">8EABD91B465443F0A4995418F483DC51</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='PresentationConfiguration'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="39B5547A185B42359F80181F475B5262">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Life Cycle Map" type="ItemType" name="Life Cycle Map">AC32527D85604A4D9FC9107C516AEF47</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='RelationshipType'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="683A45CA661E40FC90BBF0108E615557">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Workflow Map" type="ItemType" name="Workflow Map">B19D349CC6FC44BC97D50A6D70AE79CB</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Report'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="503A0444376F439CBF2BA8C66969CCDA">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Permission" type="ItemType" name="Permission">C6A89FDE1294451497801DF78341B473</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Sequence'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="B4F57622960E428DA025B54C46505D28">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Identity" type="ItemType" name="Identity">E582AB17663F4EF28460015B2BE9E094</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='SQL'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="57CDD4C5595C49469F629CCDF5B42CB7">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="Report" type="ItemType" name="Report">F0834BBA6FB64394B78DF5BB725532DD</source_id>
 	</Item>
-	<Item type="Item Action" action="add">
-		<source_id>
-			<Item type="ItemType" action="get" select="id" where="[ItemType].name='Workflow Map'"/>
-		</source_id>
-		<related_id>7E41725E177B4C04ADF87906B033900F</related_id>
+	<Item type="Item Action" action="add" id="43343E4EACCE4F37A1C4A399DE7CF6ED">
+		<related_id keyed_name="labs_FindParentPackage" type="Action">7E41725E177B4C04ADF87906B033900F</related_id>
+		<source_id keyed_name="SQL" type="ItemType" name="SQL">FC3E32F18F804FD9BE4B175973D29112</source_id>
 	</Item>
 </AML>
