@@ -4,14 +4,17 @@
   <execution_allowed_to keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</execution_allowed_to>
   <method_code><![CDATA[// Aras Labs Project
 // Eli Donahue - 9/30/16
-//
 // Check whether the current context item belongs to a package. 
 // If package is found, return name.
+//
+// Eli Donahue - 10/25/16
+// Fix failure for versionable items
 
 var inn = this.getInnovator();
 var item = this;
 var itemID = this.getID();
 var itemType = this.getType();
+var itemConfg = this.getProperty("config_id",itemID);
 
 if (!itemID)
     return alert("Invalid item ID");
@@ -19,14 +22,46 @@ if (!itemID)
 if (!itemType)
     return alert("Invalid item type");
     
+// get all ids associated with the config id
+var idList = inn.newItem(itemType,"get");
+idList.setProperty("config_id",itemConfg);
+idList.setAttribute("select","id");
+
+// trick needed to get non-current versions
+idList.setProperty("generation",1); 
+idList.setPropertyAttribute("generation","condition","ge"); 
+// end version trick
+
+idList = idList.apply();
+
+if (idList.isCollection())
+{
+    // build id list string
+    var tmp = idList.getItemByIndex(0);
+    var ids = "'" + tmp.getID() + "'";
+    
+    for (var i=1; i<idList.getItemCount(); i++)
+    {
+        tmp = idList.getItemByIndex(i);
+        ids += ",'" + tmp.getID() + "'";
+    }
+}
+else
+{
+    var ids = "'"+itemConfg+"'";
+}
+
+// get package element where element_id matches this item's id (or a version's id)
 var pkgEl = inn.newItem("PackageElement","get");
-pkgEl.setProperty("element_id",itemID);
+pkgEl.setProperty("element_id",ids);
+pkgEl.setPropertyAttribute("element_id","condition","in");
 pkgEl.setProperty("element_type",itemType);
 pkgEl = pkgEl.apply();
 
 if (pkgEl.isError())
-    return alert("No package found for "+itemType+" with id='"+itemID+"'.");
+    return alert("No package found for "+itemType+" with id in ("+ids+").");
     
+// get package information for package element
 var pkgGrp = inn.newItem("PackageGroup","get");
 pkgGrp.setProperty("id",pkgEl.getProperty("source_id",""));
 pkgGrp = pkgGrp.apply();

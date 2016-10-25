@@ -1,0 +1,21 @@
+﻿<AML>
+ <Item type="Item Action" id="683A45CA661E40FC90BBF0108E615557" action="add">
+  <related_id keyed_name="labs_FindParentPackage" type="Action">
+   <Item type="Action" id="7E41725E177B4C04ADF87906B033900F" action="add">
+    <item_query>&lt;Item type="{@type}" id="{@id}" levels= "1" action="get" select="config_id" /&gt;</item_query>
+    <label xml:lang="en">Find Parent Package</label>
+    <location>client</location>
+    <method keyed_name="labs_FindParentPackage" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>labs_FindParentPackage</name>
+     </Item>
+    </method>
+    <target>none</target>
+    <type>item</type>
+    <name>labs_FindParentPackage</name>
+   </Item>
+  </related_id>
+  <sort_order>128</sort_order>
+  <source_id keyed_name="Workflow Map" type="ItemType" name="Workflow Map">B19D349CC6FC44BC97D50A6D70AE79CB</source_id>
+ </Item>
+</AML>
