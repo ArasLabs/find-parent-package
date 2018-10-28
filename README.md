@@ -26,18 +26,18 @@ The Find Parent Package project provides an Item Action that determines the name
 
 > Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
-## Installation
+## Installation:
 
 #### Important!
 **Always back up your code tree and database before applying an import package or code tree patch!**
 
-### Pre-requisites
+### Pre-requisites:
 
 1. Aras Innovator installed (version 11.0 SPx preferred)
 2. Aras Package Import tool
 3. Find Parent Package import package
 
-### Install Steps
+### Steps to Install:
 
 1. Backup your database and store the BAK file in a safe place.
 2. Open up the Aras Package Import tool.
