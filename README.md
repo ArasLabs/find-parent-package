@@ -19,12 +19,19 @@ The Find Parent Package project provides an Item Action that determines the name
 * SQL
 * Workflow Map
 
-## Project Details
+## History
 
-**Built Using:** Aras 11.0 SP7
-**Browsers Tested:** Internet Explorer 11, Firefox 38 ESR, Chrome
+Release | Notes
+--------|--------
+[v1.0.1](https://github.com/ArasLabs/find-parent-package/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
+[v1.0.0](https://github.com/ArasLabs/find-parent-package/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
-> Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v1.0.1](https://github.com/ArasLabs/find-parent-package/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
+[v1.0.0](https://github.com/ArasLabs/find-parent-package/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
 
 ## Installation
 
