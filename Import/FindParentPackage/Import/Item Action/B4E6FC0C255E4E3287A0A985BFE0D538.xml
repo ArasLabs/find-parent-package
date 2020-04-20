@@ -1,0 +1,21 @@
+﻿<AML>
+ <Item type="Item Action" id="B4E6FC0C255E4E3287A0A985BFE0D538" action="add">
+  <related_id keyed_name="labs_FindParentPackage" type="Action">
+   <Item type="Action" id="7E41725E177B4C04ADF87906B033900F" action="add">
+    <item_query>&lt;Item type="{@type}" id="{@id}" levels= "1" action="get" select="config_id" /&gt;</item_query>
+    <label xml:lang="en">Find Parent Package</label>
+    <location>client</location>
+    <method keyed_name="labs_FindParentPackage" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>labs_FindParentPackage</name>
+     </Item>
+    </method>
+    <target>none</target>
+    <type>item</type>
+    <name>labs_FindParentPackage</name>
+   </Item>
+  </related_id>
+  <sort_order>128</sort_order>
+  <source_id keyed_name="gn_NodeViewDefinition" type="ItemType" name="gn_NodeViewDefinition">E3B78447EB16474BBCCC55785B030828</source_id>
+ </Item>
+</AML>
